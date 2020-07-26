@@ -2,19 +2,19 @@
 $(function() {
     $(".change-devoured").on("click", function(event) {
       var id = $(this).data("id");
-      var newSleep = $(this).data("newsleep");
+      var newDevourData = $(this).data("devoured");
   
-      var newSleepState = {
-        sleepy: newSleep
+      var newDevourObj = {
+        devoured: newDevourData
       };
   
       // Send the PUT request.
       $.ajax("/api/burgers/" + id, {
         type: "PUT",
-        data: newSleepState
+        data: newDevourObj
       }).then(
         function() {
-          console.log("changed sleep to", newSleep);
+          console.log("changed to be devoured", newDevourObj);
           // Reload the page to get the updated list
           location.reload();
         }

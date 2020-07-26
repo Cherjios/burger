@@ -1,28 +1,18 @@
 <h1>Burgers</h1>
 
-<h2>Burgers to devour!</h2>
-
-{{!-- <ul>
-  {{#each burgers}}
-    {{#unless devoured}}
-      {{devoured=0}}
-    {{/unless}}
-  {{/each}}
-</ul> --}}
-
+<h2>Burgers to devour than makes you happy :)!</h2>
 
 <ul>
   {{#each burgers}}
-    <li>
-      <p> {{burger_name}}</p>
-      <button class="change-devoured" type="submit">Devour!</button>
-    </li>
+    {{#unless devoured}}
+      {{> burgers/burgers-block devoured = true}}
+    {{/unless}}
   {{/each}}
 </ul>
 
 
 
-<h2>Burgers you want to eat!</h2>
+<h2>Burgers you have eaten and your scale won't be happy about it!!</h2>
 
 {{!-- <ul>
   {{#each burgers}}
