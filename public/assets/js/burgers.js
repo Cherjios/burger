@@ -2,7 +2,7 @@
 $(function() {
     $(".change-devoured").on("click", function(event) {
       var id = $(this).data("id");
-      var newDevourData = $(this).data("devoured");
+      var newDevourData = true;
   
       var newDevourObj = {
         devoured: newDevourData

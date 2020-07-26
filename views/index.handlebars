@@ -1,11 +1,11 @@
 <h1>Burgers</h1>
 
-<h2>Burgers to devour than makes you happy :)!</h2>
+<h2>Burgers to devour and be proud of yourself!</h2>
 
 <ul>
   {{#each burgers}}
     {{#unless devoured}}
-      {{> burgers/burgers-block devoured = true}}
+      {{> burgers/burgers-block devoured=true}}
     {{/unless}}
   {{/each}}
 </ul>
@@ -13,14 +13,13 @@
 
 
 <h2>Burgers you have eaten and your scale won't be happy about it!!</h2>
-
-{{!-- <ul>
+<ul>
   {{#each burgers}}
     {{#if devoured}}
-      {{> burgers/burger-block devoured=false}}
+      {{> burgers/burgers-block devoured=false}}
     {{/if}}
   {{/each}}
-</ul> --}}
+</ul>
 
 <h2>Add a Burger</h2>
 <form class="create-form">
