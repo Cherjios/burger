@@ -13,15 +13,13 @@ This application creates a burger logger with MySQL, Node, Express, Handlebars a
 
 ## Installation
 ```
-git@github.com:Cherjios/Template-Engine-Employee-Summary.git
+git clone git@github.com:Cherjios/burger.git
 
-cd Template-Engine-Employee-Summary.git
+cd burger
 ```
 
 ## Usage
-```
-node app.js
-```
+
 ![team](team.gif)
 <!-- ![video](https://drive.google.com/file/d/1VZ-NoRsYAVHHlUmn8DEL0smw_6etV9fB/view?usp=sharing) -->
 
@@ -33,7 +31,7 @@ No license need it
 [cherjios](https://github.com/cherjios)
 
 ##  Tests
-``` node run test```
+
 
 ## Questions
  sc.lopezm@gmail.com
