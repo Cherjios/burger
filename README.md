@@ -29,7 +29,7 @@ nmp install express-handlebars
 
 ## Usage
 
-![team](team.gif)
+![burger](burger.gif)
 
 ## Technology
 * [Javascript](https://developer.mozilla.org/en-US/docs/Web/)

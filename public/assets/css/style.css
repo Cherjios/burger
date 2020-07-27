@@ -1,4 +1,7 @@
-
+h1{
+    font-size: 45px;
+    font-weight: 900;
+}
 ul{ 
     list-style-type: none;
     font-size: 25px;
