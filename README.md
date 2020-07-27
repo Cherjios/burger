@@ -14,8 +14,14 @@ This application creates a burger logger with MySQL, Node, Express, Handlebars a
 ## Installation
 ```
 git clone git@github.com:Cherjios/burger.git
-
 cd burger
+```
+### Instaling npm packages 
+```
+npm install inquirer
+nmp install mysql
+nmp install express
+nmp install express-handlebars
 ```
 
 ## Usage
