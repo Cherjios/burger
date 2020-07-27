@@ -1,43 +1,60 @@
-<h1>Burgers</h1>
+<div class="container-fluid bg-warning">
+  <div class="container bg-primary">
+    <div class="row">
+      <div class="col text-center text-white">
+        <h1>Burgers</h1>
+        <img src="320860.jpg" alt="burger">
+        <h2>Add a Burger</h2>
+        <form class="create-form">
 
-<h2>Burgers to devour and be proud of yourself!</h2>
+          <div class="form-group">
+            <label for="ca">Burger Name:</label>
+            <input type="text" id="ca" name="name">
+          </div>
+          <button type="submit button" class="btn btn-secondary btn-lg m-4">Add burger!</button>
 
-<ul>
-  {{#each burgers}}
-  {{#unless devoured}}
-  {{!-- {{> burgers/burgers-block devoured=true}} --}}
-  <li>
-    {{burger_name}}
+          {{!-- <button type="submit">Add burger!</button> --}}
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col bg-light">
+        <h2 class="text-danger">Burgers to devour and be proud of yourself!</h2>
 
-    <button class="change-devoured" data-id="{{id}}" data-devoured="{{devoured}}">
-      To devour!
-    </button>
-  </li>
-  {{/unless}}
-  {{/each}}
-</ul>
+        <ul class="text-center">
+          {{#each burgers}}
+          {{#unless devoured}}
+          {{!-- {{> burgers/burgers-block devoured=true}} --}}
+          <li class="text-success">
+            {{burger_name}}
+            <button type="button" class="change-devoured btn btn-outline-secondary" data-id="{{id}}"
+              data-devoured="{{devoured}}">
+              To devour!
+            </button>
+          </li>
+          {{/unless}}
+          {{/each}}
+        </ul>
 
 
+      </div>
+      <div class="col bg-light">
 
-<h2>Burgers you have eaten and your scale won't be happy about it!!</h2>
-<ul>
-  {{#each burgers}}
-  {{#if devoured}}
-  {{!-- {{> burgers/burgers-block devoured=false}} --}}
-  <li>
-    {{burger_name}}
-  </li>
-  {{/if}}
-  {{/each}}
-</ul>
+        <h2 class="text-danger">Burgers you have eaten and your scale won't be happy about it!!</h2>
+        <ul class="text-center">
+          {{#each burgers}}
+          {{#if devoured}}
+          {{!-- {{> burgers/burgers-block devoured=false}} --}}
+          <li class="text-info">
+            {{burger_name}}
+          </li>
+          {{/if}}
+          {{/each}}
+        </ul>
 
-<h2>Add a Burger</h2>
-<form class="create-form">
 
-  <div class="form-group">
-    <label for="ca">Burger Name:</label>
-    <input type="text" id="ca" name="name">
+      </div>
+    </div>
+
   </div>
-
-  <button type="submit">Add burger!</button>
-</form>
+</div>
