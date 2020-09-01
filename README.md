@@ -42,12 +42,10 @@ nmp install express-handlebars
 * [npm](https://www.npmjs.com/)
 * [handlesbars](https://handlebarsjs.com/guide/#what-is-handlebars)
 
-
-
 ## Contributing
 * **SERGIO LOPEZ** 
 
-- [Link to Portfolio Site](https://cherjios.github.io/Responsive-Portfolio/)
+- [Link to Portfolio Site](https://cherjios.github.io/React-Portfolio/)
 - [Link to Github](https://github.com/cherjios)
 - [Link to LinkedIn](https://www.linkedin.com/in/sergio-lopez-81790579)
 
